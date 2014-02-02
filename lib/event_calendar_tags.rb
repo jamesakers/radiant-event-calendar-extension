@@ -61,7 +61,7 @@ module EventCalendarTags
   
   tag "events:each" do |tag|
     tag.locals.events ||= get_events(tag)
-    result = []
+    result = ""
     tag.locals.previous_headers = {}
     tag.locals.events.each do |event|
       tag.locals.event = event
