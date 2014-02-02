@@ -2,7 +2,7 @@ require 'rubygems'
 require 'net/http'
 require 'ri_cal'
 require 'date'
-require 'ftools'
+require "fileutils"
 
 class Ical < ActiveRecord::Base
   include ActionView::Helpers::TextHelper
